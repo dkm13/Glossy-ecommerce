@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(252, 252, 252);
+}
+.container {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.product {
+  width: 260px;
+  height: 360px;
+  background-color: rgb(248, 248, 248);
+  border: 2.5px solid gray;
+  margin: 0;
+  padding: 0;
+}
+.product:hover {
+  box-shadow: 0px 0px 34px rgb(136, 132, 132);
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.product img {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.product h4 {
+  text-align: center;
+  text-decoration: underline 4px blue;
+}
+.product p {
+  padding-left: 20px;
+  font-size: 20px;
+  background-color: rgb(90, 17, 90);
+  color: white;
+}
+.product button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #001f54;
+  width: 40%;
+  text-align: center;
+  font-size: 19px;
+}
+.product button:hover {
+  background-color: #1b468f;
+}
+.product a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1078px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .product {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+  .product {
+    width: 33%;
+    height: 320px;
+  }
+  .product img {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .product {
+    width: 33%;
+    height: 320px;
+  }
+  .product img {
+    height: 150px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 413px) {
+  .container {
+    width: 94%;
+  }
+  .product {
+    width: 50%;
+    height: 280px;
+  }
+  .product img {
+    height: 150px;
+    width: 75%;
+    margin-bottom: 0;
+  }
+  .product p {
+    margin-bottom: 4px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container {
+    width: 95%;
+  }
+  .product h4 {
+    font-size: 20px;
+  }
+  .product img {
+    height: 130px;
+    width: 60%;
+    margin-bottom: 3px;
+  }
+}

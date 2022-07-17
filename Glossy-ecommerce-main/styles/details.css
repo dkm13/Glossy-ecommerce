@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(251, 251, 251);
+}
+.container {
+  width: 70%;
+  height: 450px;
+  background-color: rgb(243, 242, 242);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  border: 3px solid black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.container:hover {
+  box-shadow: 0px 0px 20px gray;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.part-1 {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.part-1 img {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+.part-2 {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  border-left: 2.5px solid black;
+  padding: 20px 0 0 20px;
+}
+.part-2 h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: 4px underline rgb(24, 24, 83);
+  margin-bottom: 10px;
+}
+.lprice {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bname {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1078px) {
+  .container {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 55%;
+    height: 600px;
+    flex-direction: column;
+  }
+  .part-1 {
+    width: 100%;
+    height: 50%;
+    border-bottom: 2.5px solid black;
+  }
+  .part-2 {
+    width: 100%;
+    height: 50%;
+    border-left: 0;
+  }
+}
